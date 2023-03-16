@@ -1,0 +1,42 @@
+<!-- 
+#1 '!' write html format
+#2 <h1>title <h1>
+#3 <p1>content <p1>
+#4 image: <body>:
+    <img src='link' alt='text' title=''>
+
+#5 create css under new folder css 
+#6 img { w200 h200
+}
+back to img.html <head>: 
+    <link>:href:"./path"
+
+change color:
+span{
+    color:pink;
+}
+,<p>123 <span>colored</span> 456</p>
+
+
+one by one change:
+.banner_img:{
+    w200
+    h200
+}
+class="banner_img"
+
+<p><p>block
+<span>inline
+
+block 排板有區塊 可調長高
+span 不排版標記
+
+
+6.anchor 
+a 
+外部連結
+section*6>h2[id="section$"]{section$} emmet abbreviation
+ -->
+
+internal link
+id=""

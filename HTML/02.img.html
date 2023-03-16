@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/02.img.css"> -->
+    <style>
+        /* img{  
+            width: 200px;
+            height: 300px;
+        }  */
+        .banner_img {
+            width: 800px;
+            height: 600px;
+        }
+
+        .article_img {
+            width: 300px;
+            height: 300px;
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <img class="banner_img" src="https://cdn.pixabay.com/photo/2014/05/05/14/14/meadow-338211_960_720.jpg" alt="">
+    <img class="article_img"
+        src="https://bprtr.wpenginepowered.com/wp-content/uploads/2022/05/29204925_web1_220525-KCN-morning-start_1-768x512.jpg"
+        alt="">
+    <img class="article_img"
+        src="https://bprtr.wpenginepowered.com/wp-content/uploads/2022/05/29204925_web1_220525-KCN-morning-start_1-768x512.jpg"
+        alt="">
+
+    <script>
+        const img = document.querySelector('.banner_img')
+        let isFirstImg = true;
+
+        img.addEventListener('click', function () {
+            console.log('img clicked');
+            if (isFirstImg) {
+                img.setAttribute('src', 'https://hinetcdn.waca.ec/uploads/shops/248/products/8e/8e8deadabedc2c5adb53e1db6f6660fa.jpg')
+            }
+            else {
+                img.setAttribute('src', 'https://img.alicdn.com/i3/2482635690/O1CN01XEsIo91ru4Nq9Kx0u_!!0-item_pic.jpg')
+            }
+            isFirstImg = !isFirstImg;
+        })
+
+    </script>
+</body>
+
+</html>

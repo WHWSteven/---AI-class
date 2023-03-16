@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .wrap2 {
+            width: 1000px;
+            height: 1000px;
+            background-color: dimgray;
+            position: relative;
+
+        }
+
+        .wrap {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: slateblue;
+
+        }
+
+        p1 {
+            text-align: center;
+        }
+
+        /* relative to the original point and move */
+        /* absolute 限制範圍內 */
+        /* z-index big-->front */
+        .box {
+            width: 100px;
+            height: 350px;
+            background-color: red;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: -1;
+            /* left: 210px; */
+            /* top: 50px; */
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap2">
+        <div class="wrap">
+            <div class="box">
+                <p1>box</p1>
+            </div>
+            <div class="box2">box2</div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

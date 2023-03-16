@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 權重最小 */
+        h1 {
+            color: blue !important;
+        }
+
+        /* 權重二 */
+        .h1class {
+            color: aqua;
+        }
+
+        /* 權重一樣 順序後者大 */
+        .h1class2 {
+            color: red;
+        }
+
+        .h1class2 {
+            color: burlywood;
+        }
+
+        /* 權重三 */
+        #h1id {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- id 唯一 不能重複 class can -->
+    <h1 id="h1id" class="h1class h1class2">Hello</h1>
+
+</body>
+
+</html>

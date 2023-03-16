@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 容器對齊 */
+        .container {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        header {
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            margin-bottom: 150px;
+        }
+
+        /* class name +"." */
+
+        .left,
+        .center,
+        .right {
+            /* border: 1px solid blue; */
+            flex: 1 1 0;
+        }
+
+        .left ul {
+            /* 要有剩餘空間才能動100% */
+            height: 100%;
+            align-items: center;
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+        }
+
+        .left ul li a {
+            color: black;
+            text-decoration: none;
+            /* border: 1px solid green; */
+        }
+
+        .center {
+            text-align: center;
+            /* font-style: t-italic; */
+            font-size: 2rem;
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .right i {
+            font-size: 2rem;
+            /* color: rgb(206, 81, 114); */
+
+        }
+
+        .ig {
+            color: pink;
+        }
+
+        .tw {
+            color: blue;
+        }
+
+        .cart {
+            color: darkslategray;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            border-right: 1px solid red;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .nav-links a:nth-child(3) {
+            border-right: none;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            /* -margin 往外拉 */
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+
+        .col {
+            width: 25%;
+            margin-bottom: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+            /* border: 1px solid red; */
+        }
+
+        .card {
+            border: 1px solid black;
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 3/4;
+            object-fit: cover;
+        }
+
+        .card h4 {
+            font-size: 12px;
+        }
+
+        .card p {
+            font-size: 8px;
+        }
+
+        /* @media screen and(min-width)  */
+    </style>
+
+</head>
+
+<body>
+    <header class="container">
+        <div class="left">
+            <ul>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Lookbook</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="center">
+            <h1>Alameda</h1>
+        </div>
+        <div class="right">
+            <div class="ig">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class='tw'>
+                <i class="fa-brands fa-twitter"></i>
+
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="nav-links">
+                <a href="#">Top</a>
+                <a href="#">Bottoms</a>
+                <a href="#">Sale</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="products">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./alamada-imgs-main/1.jpeg" alt="">
+                            <h4>
+                                Lounge Tonic/Black
+                            </h4>
+                            <p>50$</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./alamada-imgs-main/2.jpeg" alt="">
+                            <h4>
+                                Lounge Tonic/Black
+                            </h4>
+                            <p>50$</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./alamada-imgs-main/3.jpeg" alt="">
+                            <h4>
+                                Lounge Tonic/Black
+                            </h4>
+                            <p>50$</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./alamada-imgs-main/4.jpeg" alt="">
+                            <h4>
+                                Lounge Tonic/Black
+                            </h4>
+                            <p>50$</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./alamada-imgs-main/5.jpeg" alt="">
+                            <h4>
+                                Lounge Tonic/Black
+                            </h4>
+                            <p>50$</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div></div>
+        <div></div>
+        <div>
+            <form action="">
+                <input type="text" name="usermail" placeholder="User Email...">
+                <button type="submit">sign up</button>
+            </form>
+        </div>
+        <div></div>
+    </footer>
+
+</body>
+
+</html>

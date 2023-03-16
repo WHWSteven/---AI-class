@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+
+<body>
+    <script>
+        const myArray = ['value1', 'value2', 'value3'];
+        // add from the last
+        myArray.push('push')
+        console.log('push ', myArray);
+
+        // add from the begging
+        myArray.unshift('unshift')
+        console.log('unshift ', myArray);
+
+        // delete from the last
+        myArray.pop()
+        console.log('pop', myArray);
+
+        // delete from the begging
+        myArray.shift()
+        console.log('shift', myArray);
+
+        console.log('value1 ', myArray);
+        console.log('value1 is', myArray[0]);
+        console.log('value1 is', myArray[1]);
+        console.log('value1 is', myArray[2]);
+        console.log('array length', myArray.length);
+        // specific values delete
+        console.log('slice', myArray.slice(1, 2));
+        // add splice
+        console.log('addslice', myArray.splice(1, 0, 'addsplice'));
+        console.log('addslice', myArray);
+        // delete splice
+        console.log('deleteslice', myArray.splice(1, 1,));
+        console.log('deleteslice', myArray)
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
